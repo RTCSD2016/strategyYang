@@ -11,7 +11,7 @@
 #include <algorithm>
 #include <cmath>
 
-double get_angel(x2,y2)
+double get_angel(x2,y2)//获取击球手速度方向
 {
 double alpha,beta;
 double a,b,c,complex_term;
@@ -25,7 +25,7 @@ beta=get_result(a,b,c);
 
 return beta;
 }
-double get_hitx(beta)
+double get_hitx(beta)//获取击球手击球时的x方向坐标
 {
 double sin,x1;
 
@@ -34,7 +34,7 @@ x1=x2-(r1+r2)*cos;
 
 return x1;
 }
-double get_hity(beta)
+double get_hity(beta)//获取击球手击球时的y方向坐标
 {
 double cos,y1;
 
@@ -44,7 +44,7 @@ y1=y1-(r1+r2)*sin;
 return y1;
 }
 
-double get_result(a,b,c)
+double get_result(a,b,c)//求根函数
 {
   double a,b,c;
   t=b*b-4*a*c;
